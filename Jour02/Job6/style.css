@@ -1,0 +1,19 @@
+/* Version ultra simple pour débutant */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #222;
+  text-align: center;
+}
+
+#message {
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+/* Après le code Konami on change juste les couleurs du body */
+body.konami {
+  background: #1e3a8a; /* bleu */
+  color: #fff; /* texte blanc */
+}
