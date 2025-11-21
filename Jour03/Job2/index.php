@@ -9,12 +9,12 @@
 <button id="shuffle">Mélanger</button>
 
 <div id="game">
-    <img src="images/arc1.png" data-order="1">
-    <img src="images/arc2.png" data-order="2">
-    <img src="images/arc3.png" data-order="3">
-    <img src="images/arc4.png" data-order="4">
-    <img src="images/arc5.png" data-order="5">
-    <img src="images/arc6.png" data-order="6">
+    <img src="assets/images/arc1.png" data-order="1">
+    <img src="assets/images/arc2.png" data-order="2">
+    <img src="assets/images/arc3.png" data-order="3">
+    <img src="assets/images/arc4.png" data-order="4">
+    <img src="assets/images/arc5.png" data-order="5">
+    <img src="assets/images/arc6.png" data-order="6">
 </div>
 
 <p id="result"></p>
