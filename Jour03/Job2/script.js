@@ -121,4 +121,36 @@ $(document).ready(function () {
     // Vérifier la victoire
     checkWin();
   }
+
+ 
+  const konami = [
+    "ArrowUp",
+    "ArrowUp",
+    "ArrowDown",
+    "ArrowDown",
+    "ArrowLeft",
+    "ArrowRight",
+    "ArrowLeft",
+    "ArrowRight",
+    "b",
+    "a",
+  ];
+
+  let konamiBuffer = [];
+
+  // Écoute globale des touches clavier
+  $(document).on("keydown", function (e) {
+    konamiBuffer.push(e.key);
+
+    // Ne garder que les dernières touches utiles
+    if (konamiBuffer.length > konami.length) konamiBuffer.shift();
+
+    // Comparer les séquences
+    if (konamiBuffer.join(",") === konami.join(",")) {
+      // Remettre dans l'ordre et afficher la victoire
+      resetOrder();
+      $("#result").css("color", "green").text("Vous avez gagné (Konami)");
+      konamiBuffer = [];
+    }
+  });
 });
