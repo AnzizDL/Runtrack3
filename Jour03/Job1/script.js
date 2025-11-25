@@ -8,7 +8,6 @@ $(document).ready(function () {
         // → jQuery met la citation dans le paragraphe
         $("#citation").text(citation);
     });
-
     
     $("#hide").click(function () {
         // → jQuery vide le texte du paragraphe

@@ -11,8 +11,8 @@ const myJson = `{
     "creation": "2019"
 }`
 
-console.log(jsonValueKey(myJson, "city"))      // Marseille
-console.log(jsonValueKey(myJson, "name"))      // La Plateforme_
-console.log(jsonValueKey(myJson, "creation"))  // 2019
-console.log(jsonValueKey(myJson, "nb_staff"))  // 11
-console.log(jsonValueKey(myJson, "address"))   // 8 rue d'hozier
+console.log(jsonValueKey(myJson, "city"))      
+console.log(jsonValueKey(myJson, "name"))      
+console.log(jsonValueKey(myJson, "creation"))  
+console.log(jsonValueKey(myJson, "nb_staff"))  
+console.log(jsonValueKey(myJson, "address"))
