@@ -5,10 +5,8 @@ updateButton.addEventListener("click", () => {
     fetch("users.php")
         .then(response => response.json())
         .then(users => {
-            // Vider le tableau
             usersBody.innerHTML = "";
 
-            // Pour chaque utilisateur, on crée une ligne
             users.forEach(user => {
                 const tr = document.createElement("tr");
 

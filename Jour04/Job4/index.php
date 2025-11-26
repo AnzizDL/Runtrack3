@@ -18,10 +18,11 @@
             </tr>
         </thead>
         <tbody id="users-body">
-            <!-- Les lignes seront ajoutées ici en JavaScript -->
+            <!-- JS remplira ici -->
         </tbody>
     </table>
 
     <script src="script.js"></script>
 </body>
 </html>
+<?php
