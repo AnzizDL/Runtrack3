@@ -1,0 +1,25 @@
+/* Couleur par défaut */
+body {
+  background-color: #88c1d0;
+}
+
+/* Entre 1680px et 1920px */
+@media screen and (min-width: 1680px) and (max-width: 1920px) {
+  body {
+    background-color: #ffca4b;
+  }
+}
+
+/* Entre 1280px et 1680px */
+@media screen and (min-width: 1280px) and (max-width: 1679px) {
+  body {
+    background-color: #275fa0;
+  }
+}
+
+/* Inférieur à 1280px */
+@media screen and (max-width: 1279px) {
+  body {
+    background-color: #ffffff;
+  }
+}

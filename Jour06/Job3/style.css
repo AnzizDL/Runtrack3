@@ -1,0 +1,46 @@
+/* Reset simple */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* Conteneur des sections */
+.container {
+    display: flex;
+    flex-direction: column;   /* Par défaut : en colonne (mobile) */
+}
+
+/* Style des blocs */
+.section {
+    background-color: #88c1d0;
+    border: 2px solid #ffffff;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* Écran moyen : 2 blocs par ligne */
+@media screen and (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .section {
+        width: 50%;   /* 2 par ligne */
+    }
+}
+
+/* Grand écran : 4 blocs sur une seule ligne */
+@media screen and (min-width: 1280px) {
+    .section {
+        width: 25%;   /* 4 par ligne */
+    }
+}
