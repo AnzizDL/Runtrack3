@@ -1,0 +1,70 @@
+/* ----- NAVBAR (desktop) ----- */
+
+header {
+    background-color: #275fa0;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* ----- HAMBURGER BUTTON (caché par défaut) ----- */
+
+.hamburger {
+    display: none;     /* affiché seulement en mobile */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 100%;
+    height: 4px;
+    background: white;
+    border-radius: 4px;
+}
+
+
+/* ----- MEDIA QUERY : <= 767px ----- */
+
+@media (max-width: 767px) {
+
+    /* Cacher les liens */
+    .menu {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        background-color: #275fa0;
+        padding: 15px;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        border-radius: 10px;
+    }
+
+    /* Les liens doivent s’afficher quand on ajoute .open en JS */
+    .menu.open {
+        display: flex;
+    }
+
+    /* Afficher le hamburger */
+    .hamburger {
+        display: flex;
+    }
+}
