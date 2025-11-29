@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Loom – Reverse Engineering</title>
+  
+  <!-- CDN Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Couleurs personnalisées (seule la couleur utilisée est définie) -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            loomPurple: "#e7e2fe"
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-white font-sans">
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="flex justify-between items-center px-10 py-4 shadow-sm">
+    
+    <!-- Liens -->
+    <ul class="hidden md:flex items-center gap-6 text-gray-600 text-sm">
+      <li>Use Cases</li>
+      <li>For Business</li>
+      <li>Resources</li>
+      <li>Company</li>
+      <li>Pricing</li>
+    </ul>
+
+    <!-- Boutons -->
+    <div class="flex items-center gap-3">
+      <button class="text-sm text-gray-700 hover:text-gray-900">Sign in</button>
+      <button class="px-4 py-2 rounded-full bg-indigo-600 text-white text-sm">
+        Get Loom For Free
+      </button>
+      <button class="px-4 py-2 rounded-full border text-gray-700 text-sm">
+        Contact Sales
+      </button>
+    </div>
+  </nav>
+
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="mt-10 mx-auto max-w-6xl bg-loomPurple rounded-xl p-10 flex flex-col lg:flex-row items-center gap-10">
+
+    <!-- Text -->
+    <div class="lg:w-1/2">
+      <h1 class="text-5xl font-bold text-indigo-900 leading-tight">
+        Loom on.<br>Meetings off.
+      </h1>
+
+      <p class="mt-4 text-gray-700 text-lg">
+        Record quick videos to update your team<br>
+        and cut down meetings by 29%.
+      </p>
+
+      <button class="mt-6 px-6 py-3 rounded-full bg-indigo-700 text-white font-medium">
+        Get Loom for Free
+      </button>
+    </div>
+
+
+    <!-- Card vidéo -->
+    <div class="lg:w-1/2 flex justify-center">
+      <div class="bg-white rounded-xl p-4 shadow-xl w-80">
+
+        <!-- Profil Soraya -->
+        <div class="flex items-center gap-3 mb-3">
+          <img src="https://randomuser.me/api/portraits/women/45.jpg"
+               class="h-12 w-12 rounded-full">
+          <div>
+            <h3 class="font-semibold">Soraya</h3>
+            <p class="text-sm text-gray-600">
+              "Hey team — I know there’s a lot going on today..."
+            </p>
+          </div>
+        </div>
+
+        <!-- Mini player -->
+        <div class="relative">
+          <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?fit=crop&w=800&q=80"
+               class="rounded-lg">
+
+          <!-- Bouton play -->
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="h-14 w-14 bg-white rounded-full shadow-lg flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="black" class="h-7 w-7" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Réactions -->
+        <div class="mt-3 flex items-center gap-2 text-sm">
+          <span class="text-gray-600">👍 3</span>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+</body>
+</html>
